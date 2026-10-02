@@ -1,8 +1,8 @@
 # Check Point 2 – ESP32 + MicroPython + LCD I2C + API OpenWeather + MQTT/Node-RED
 
-**Aluno:** Filipe Scal de Araujo
-**RM:** 569175
-**Turma:** 1EMA – Engenharia Mecatrônica (FIAP)
+**Alunos:** Filipe Scal de Araujo, Gabriel de Medeiros Madureira, Luis Gustavo Leonart Evangelista, Francisco Antonio Garcia Saia 
+**RMs:** 569175, 570297, 572167, 571541
+**Turma:** 1EMA – Engenharia Mecatrônica 
 
 ## Descrição
 
