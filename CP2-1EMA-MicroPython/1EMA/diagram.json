@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "author": "André Tritiack",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 9.6,
+      "left": -52.76,
+      "attrs": {
+        "env": "micropython-20260406-v1.28.0"
+      }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -51.2,
+      "left": 92,
+      "attrs": {
+        "pins": "i2c"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "esp:GND.2",
+      "lcd1:GND",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "esp:3V3",
+      "lcd1:VCC",
+      "red",
+      [
+        "h-19.05",
+        "v-48.1"
+      ]
+    ],
+    [
+      "lcd1:SCL",
+      "esp:22",
+      "green",
+      [
+        "h-19.2",
+        "v48.3"
+      ]
+    ],
+    [
+      "esp:21",
+      "lcd1:SDA",
+      "gold",
+      [
+        "h19.2",
+        "v-86.4"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
